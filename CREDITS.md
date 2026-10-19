@@ -1,10 +1,39 @@
-# DishHomie — food photo credits
+# DishHomie — AI food images and mapping
 
-The website links directly to photos on Wikimedia Commons; these are not bundled with this repository. If the image is unavailable, a built-in food illustration appears.
+The 25 photographs below were generated using OpenAI image generation for this DishHomie project, then optimized to WebP and embedded in `index.html` as data URLs. They were **not downloaded or scraped from stock photo sites**. The former default Wikimedia image links have been removed. AI generation cannot guarantee that no similar-looking images exist elsewhere or eliminate all legal risk.
 
-| Dish | Photographer | Source and license |
-| --- | --- | --- |
-| Chicken Adobo | Obsidian Soul | [Filipino Chicken Adobo with rice 2.jpg](https://commons.wikimedia.org/wiki/File:Filipino_Chicken_Adobo_with_rice_2.jpg) — [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
-| Kare-Kare | ShmilyDigital | [Beef Kare-Kare 01.jpg](https://commons.wikimedia.org/wiki/File:Beef_Kare-Kare_01.jpg) — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+The app matches photo to the recipe's **stable default ID**, rather than applying a generic category image to unrelated dishes.
 
-Original image licensing and attribution requirements apply. Users who add external HTTPS photo URLs must have permission to use those photos. All remaining default illustrations are emoji/CSS-based and are not exact food photographs.
+| Recipe ID | Exact dish shown |
+| --- | --- |
+| `ulam-001` | Chicken Adobo |
+| `ulam-002` | Ginisang Sayote with Giniling |
+| `ulam-003` | Tortang Talong |
+| `ulam-004` | Pinoy Fried Chicken |
+| `ulam-006` | Pork Giniling |
+| `ulam-007` | Tinolang Manok |
+| `ulam-008` | Tokwa't Kangkong |
+| `ulam-009` | Itlog na May Kamatis |
+| `ulam-011` | Sinigang na Baboy |
+| `ulam-012` | Bistek Tagalog |
+| `ulam-013` | Chicken Afritada |
+| `ulam-017` | Sweet & Sour Fish Fillet |
+| `ulam-018` | Pinoy Chicken Curry |
+| `ulam-019` | Pininyahang Manok |
+| `ulam-020` | Beef Tapa |
+| `ulam-021` | Nilagang Baka |
+| `ulam-031` | Pork Menudo |
+| `ulam-033` | Pinakbet |
+| `ulam-037` | Ginataang Kalabasa at Sitaw |
+| `ulam-041` | Ginisang Monggo with Malunggay |
+| `ulam-045` | Paksiw na Bangus |
+| `ulam-051` | Kare-Kare |
+| `ulam-053` | Pancit Canton |
+| `ulam-063` | Bulalo |
+| `ulam-064` | Lechon Kawali |
+
+**No incorrect substitutes:** The approved *Tofu Sisig* image is not used for `Pork Sisig` because the recipe describes pork. 45 recipes without an exact approved photograph continue to use category illustrations instead of a misleading photo.
+
+**Custom recipe photos:** Users may optionally add their own HTTPS photo URL to a recipe. Those external URLs are entered by users and are their responsibility to license/attribute. The built-in generated photos are shipped with the website and do not request any third-party photo host.
+
+**Technical/storage:** Browser `localStorage` data, recipe ID, steps, ingredients and weekly menu selections remain unchanged by this photo release. Roll back the photo update by restoring `index.html` from the preceding GitHub commit.
