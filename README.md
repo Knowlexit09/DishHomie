@@ -28,7 +28,7 @@ Open `index.html` in a browser, or visit the GitHub Pages website after deployme
 All custom recipes, favorites, picks and grocery checkmarks live in your current browser's `localStorage`, not in GitHub, and **do not sync between devices**. Export a JSON backup before clearing browser data. The storage key is preserved from the previous Ano'ng Ulam version to avoid discarding existing saved data. DishHomie imports both the new and previous backup formats.
 
 ## Food photos
-Some matching dishes use linked Wikimedia Commons photographs; other dishes use built-in food illustrations. [Photo credits and licenses](CREDITS.md). Optional user-entered HTTPS photo URLs must be used with appropriate permissions.
+25 default recipes now show individually matched, AI-generated DishHomie food photos embedded locally in `index.html` as compressed WebP data; 45 remaining default recipes show intentional emoji placeholders instead of unrelated food photos. No remote third-party/stock photos are used in default content. [AI image mapping and provenance](CREDITS.md). User-provided HTTPS photo URLs are optional and should only be used with appropriate permission.
 
 ## Files
 - `index.html` — complete site, recipes, JavaScript and styles
@@ -37,7 +37,7 @@ Some matching dishes use linked Wikimedia Commons photographs; other dishes use 
 - `.nojekyll` — GitHub Pages helper
 
 ## Limitations
-Recipe amounts are approximate and generally intended for 3–4 servings. There are currently no user accounts, cloud storage or cross-device sync, and most dishes do not yet have real photographs.
+Recipe amounts are approximate and generally intended for 3–4 servings. There are currently no user accounts, cloud storage or cross-device sync; 45 default dishes still need their own matched images.
 
 This is a public-source website. No open-source software license is granted by default. Third-party assets have separate licensing requirements.
 
