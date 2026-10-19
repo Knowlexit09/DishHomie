@@ -40,3 +40,5 @@ Some matching dishes use linked Wikimedia Commons photographs; other dishes use 
 Recipe amounts are approximate and generally intended for 3–4 servings. There are currently no user accounts, cloud storage or cross-device sync, and most dishes do not yet have real photographs.
 
 This is a public-source website. No open-source software license is granted by default. Third-party assets have separate licensing requirements.
+
+<!-- GitHub Pages redeploy trigger: 2026-10-20; nonfunctional documentation change. -->
